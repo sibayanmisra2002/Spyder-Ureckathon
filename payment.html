@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CdnJs fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./payment.css" />
+    <title>CheckOut Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- title -->
+      <header class="title">
+        <h1>Confirm & Pay</h1>
+      </header>
+      <!-- main div  -->
+      <main class="inputForm">
+        <form action="mailto:sibayanmisra2002@gmail.com" method="post">
+          <div class="inputFormLR">
+            <!-- leftFormDiv -->
+            <div class="inputForm-left">
+              <h>Confirm & Pay</h1>
+              <!-- left div upside forms -->
+              <h4>Enter Your details</h4>
+              <div class="inputForm-left-contactInfo">
+                <div class="inputField">
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    class="text"
+                    placeholder="Free Cancellation"
+                    required
+                  />
+                </div>
+
+                <label for="tel">Phone</label>
+                <div class="inputField">
+                  <img class="img-mini" src="./img/phone-solid.svg" alt="" />
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="Enter your phone..."
+                    required
+                  />
+                </div>
+              </div>
+              <!-- left div downside forms -->
+              
+              <div class="inputForm-left-shippingAdress">
+                <label for="fullname">Full name</label>
+                <div class="inputField">
+                  <img class="img-mini" src="./img/user-solid.svg" alt="" />
+                  <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    placeholder="Enter your Full name..."
+                    required
+                  />
+                </div>
+                <label for="address">Adress</label>
+                <div class="inputField">
+                  <img
+                    class="img-mini"
+                    src="./img/house-chimney-solid.svg"
+                    alt=""
+                  />
+                  <input
+                    type="text"
+                    name="adress"
+                    id="address"
+                    placeholder="Enter your address..."
+                    required
+                  />
+                </div>
+                <label for="city">City</label>
+                <div class="inputField">
+                  <img class="img-mini" src="./img/city-solid.svg" alt="" />
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    placeholder="Enter your city..."
+                    required
+                  />
+                </div>
+                <!-- dropDownList and post code -->
+                <div class="leftDownside-last">
+                  <div class="dropDownList">
+                    <label for="country">Country</label>
+                    <div class="inputField selectCountry">
+                      <img
+                        class="img-mini"
+                        src="./img/earth-europe-solid.svg"
+                        alt=""
+                      />
+                      <select name="country" id="country" required>
+                        <option value="turkey" selected>Turkey</option>
+                        <option value="germany">Germany</option>
+                        <option value="belgium">Belgium</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="postCodeDiv">
+                    <label for="postcode">Post Code</label>
+                    <div class="inputField postCode">
+                      <img src="" alt="" />
+
+                      <input
+                        type="number"
+                        min="1"
+                        name="postcode"
+                        id="postcode"
+                        placeholder="Enter your postal code..."
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="checkLeftDown">
+                  <input type="checkbox" name="information" id="information" />
+                  <label class="information" for="information"
+                    >See this information next time</label
+                  >
+                </div>
+
+                <!-- button submit  -->
+                <div class="btn">
+                  <button class="btnSubmit" type="submit">Continue</button>
+                </div>
+              </div>
+            </div>
+            <!-- RightFormDiv -->
+            <div class="inputForm-right">
+              <!-- 1st product -->
+              <div class="rightCardProduct">
+                <img
+                  class="imgProducts"
+                  src="./images/checkout.jpg"
+                  alt="backpack"
+                />
+              </div>
+
+              <div class="shippingAndTotal">
+                <div class="shipping">
+                  <span>View Payment Summary</span> <span> +</span>
+                </div>
+
+                <div class="shipping">
+                  <span>Total Payable</span>
+                  <span class="totalPriceUser">
+                    <span>$</span>
+                    XXX</span>
+                </div>
+                <div class="button">
+                  <a href="#" class="signup">Confirm & Pay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="./payment.js"></script>
+  </body>
+</html>
