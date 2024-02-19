@@ -140,6 +140,15 @@ select {
     background: #2563eb;
     color: white;
 }
+.btnPay {
+  padding: 10px;
+  margin-top: 3rem;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  background: #2563eb;
+  color: white;
+}
 .btnSubmit:active {
   transform: scale(0.99);
   cursor: pointer;
@@ -148,7 +157,7 @@ select {
   cursor: pointer;
   background-color: rgb(248, 138, 98);
 }
-.button:hover {
+.btnPay:hover {
     cursor: pointer;
     background-color: rgb(248, 138, 98);
   }
